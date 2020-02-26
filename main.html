@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- META -->
+<meta charset="utf-8">
+<!-- TITLE -->
+<title>아무말대잔치 - 메인</title>
+</head>
+<!-- BODY1 START -->
+<body>
+<h1><center><a href="main.html">아무말대잔치</a></center></h1>
+<ul>
+<li><a href="200226.html">200226</a></li>
+<li><a href="200227.html">200227</a></li>
+<li><a href="200228.html">200228</a></li>
+</ul>
+</body>
+<!-- BODY2 START -->
+<body>
+<center><h2>아무말대잔치가 시작됐다.</h2></center>
+<p>윈스턴 스미스 (Winston Smith)<br>
+주인공. 39세로 오세아니아 외부당원이다. 런던의 승리 맨션에 거주하며 근무지는 진리부 기록국. 주요 업무는 과거의 신문 기사를 조작하고 수정해서 당의 실책을 가리는 것이다. 양친과 여동생이 있으나 모두 행방불명 상태이며, 외부당원인 캐서린과 결혼도 했지만 별거 중이다. 윈스턴 스미스라는 이름은 윈스턴 처칠의 이름과 당시 영국에서 가장 흔한 성인 스미스를 따서 지은 이름이다.
+본래는 평범한 당원이었으나, 여러가지 계기로 인해 현 체제에 의문을 품게 되고 노트를 사서 일기를 쓰게 되면서 당의 반역자가 된다.[21] 이후 줄리아를 만나 밀회를 즐기고, 내부당원인 오브라이언에 의해 지하 투쟁 단체인 형제단에 가입해서 체제 전복을 위한 투쟁을 시작하나 했더니...
+사실 오브라이언은 윈스턴이 체제에 불만을 가진 것을 알고 있었고, 그래서 체포하기 위해 무려 7년 동안 연극을 꾸민 것이었다. 결국 사상죄로 애정부에 끌려들어가 모진 고문 끝에 저항 의지가 완전히 거세된 채, 빅 브라더를 사랑한다는 마음을 가지면서 당에게 완전히 세뇌된다.</p>
+<input type="checkbox" title="이게뭘까?"><br>
+<input type="checkbox" title="이게뭘까?"><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w5S0GACgL3U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- 이게뭐지 -->
+<script>
+        $(document).ready(function() {
+            $('.hentry .movie').append('<input style="position:absolute;margin-left:5px;width:1.5rem;opacity: 0.1;filter: alpha(opacity=10);" class="split" type="image" src="/static/img/desktop/noun_1102024.png" value="split" title="새창으로 열기" onmouseover="this.style.opacity=\'1\'" onmouseleave="this.style.opacity=\'0.1\'">');
+            return $(document).on('click', '.split', function() {
+                var height, htmlCode, iframeCode, iframeObj, ifrmaeObjCloned, width;
+                iframeObj = $(this).parent('.movie').find('iframe');
+                width = iframeObj.attr('width');
+                height = iframeObj.attr('height');
+                iframeCode = $(this).parent('.movie').find('iframe')[0].outerHTML;
+                ifrmaeObjCloned = $(iframeCode);
+                ifrmaeObjCloned.attr('width', '100%');
+                ifrmaeObjCloned.attr('height', '100%');
+                if (window.o2moivepop) {
+                    window.o2moivepop.close();
+                }
+                window.o2moivepop = window.open('', 'o2moivepop', "width=" + width + ",height=" + height + "");
+                htmlCode = '<!doctype html><html><body style="margin:0;width:100vw;height:100vh">' + ifrmaeObjCloned[0].outerHTML + '</body></html>';
+                return o2moivepop.document.write(htmlCode);
+            });
+        });
+</script>
+<!-- comment -->
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://0002-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+<!-- comment -->
+<p>
+참고한 사이트들<br>
+<a href="http://www.naver.com/" target="_blank" title="네이버">네이버</a><br>
+<a href="http://www.dogdrip.net/" target="_blank" title="개드립넷">개드립넷</a><br>
+</p>
+</body>
+<body>
+<ol>
+현재 참여자
+<li>익명</li>
+<li>익명</li>
+<li>익명</li>
+</ol>
+</body>
+</html>
